@@ -586,9 +586,9 @@
 
         // --- ART SIDE ---
         function cycleThought() {
-            if (gameState.thoughtIndex < THOUGHTS.length - 1) {
-                gameState.thoughtIndex++;
-            }
+            // Loop back to start if at end
+            gameState.thoughtIndex = (gameState.thoughtIndex + 1) % THOUGHTS.length;
+            
             artText.style.opacity = 0;
             setTimeout(() => {
                 artText.innerText = THOUGHTS[gameState.thoughtIndex];
