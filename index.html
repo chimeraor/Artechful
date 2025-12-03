@@ -457,6 +457,20 @@
             #hud { bottom: 10px; }
         }
 
+        /* --- CV LOG STYLES --- */
+        .cv-log h3 { color: var(--art-secondary); margin-top: 30px; margin-bottom: 10px; border-bottom: 1px solid #555; display: inline-block; font-family: var(--tech-font); letter-spacing: 2px; }
+        .cv-log h4 { color: var(--tech-accent); margin: 15px 0 5px 0; font-family: var(--tech-font); }
+        .cv-log .cv-meta { color: #888; font-size: 0.8em; margin-bottom: 10px; display: block; font-style: italic; }
+        .cv-log ul { padding-left: 20px; }
+        .cv-log li { margin-bottom: 5px; color: #ccc; font-family: sans-serif; font-size: 0.9em; }
+        
+        .skill-tag { 
+            display: inline-block; padding: 2px 8px; margin: 2px; 
+            border: 1px solid #555; border-radius: 4px; font-size: 0.8em; color: #ddd; 
+        }
+        /* Highlight specific skills used in this game */
+        .skill-tag.highlight { border-color: var(--tech-accent); color: var(--tech-accent); }
+
     </style>
 </head>
 <body class="mode-tech">
@@ -616,7 +630,60 @@
             Just as Artechful explores the synthesis between structure and chaos, I believe the future of education lies in the bridge between Technology and Play.<br><br>
             I built this prototype to demonstrate my passion for interactive storytelling and immersive mechanics—values I see reflected in Polycular's work on projects like <em>Escape Fake</em> and <em>Crew Together</em>.<br><br>
             Like the protagonist of Room 33, I don't see Tech and Art as separate paths, but as two lenses for the same goal: Creating meaning.<br><br>
-            I am ready to help build that bridge with you.
+            I am ready to help build that bridge with you.<br><br>
+            
+            <div style="width: 100%; height: 1px; background: #555; margin: 30px 0;"></div>
+            
+            <div class="cv-log">
+                <div style="font-family: var(--tech-font); color: var(--tech-accent); margin-bottom: 20px;">> INITIATING SYSTEM_DATA_DUMP [RESUME_LOADED]</div>
+                
+                <h3>AHMED MEDHAT</h3>
+                <span class="cv-meta">Communication & Information Engineer | Master's Student in AI (JKU Linz)</span>
+                <span class="cv-meta">Salzburg, AT | +43 677 644 15165 | amedhat.y@gmail.com</span>
+
+                <h3>SKILLS DETECTED</h3>
+                <div style="margin-top: 10px;">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag highlight">HTML</span>
+                    <span class="skill-tag highlight">CSS</span>
+                    <span class="skill-tag highlight">JavaScript</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">R</span>
+                    <span class="skill-tag">MATLAB</span>
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Git</span>
+                </div>
+
+                <h3>EXPERIENCE LOG</h3>
+                <h4>Data Scout</h4>
+                <span class="cv-meta">Stats Perform, 2025</span>
+                
+                <h4>Events & Gastronomy</h4>
+                <span class="cv-meta">Various Roles, 2023-2024</span>
+
+                <h4>Videography & Editing</h4>
+                <span class="cv-meta">2020-2021</span>
+
+                <h3>EDUCATION PROTOCOLS</h3>
+                <h4>Master's in Artificial Intelligence (Ongoing)</h4>
+                <span class="cv-meta">Johannes Kepler University, Linz</span>
+                
+                <h4>B.Sc Communication & Information Engineering</h4>
+                <span class="cv-meta">University of Science and Technology at Zewail City (2013-2019)</span>
+                <ul>
+                    <li>Minor: Aerospace Engineering</li>
+                </ul>
+
+                <h3>PROJECT ARCHIVES</h3>
+                <h4>Scene Recognition (Computer Vision)</h4>
+                <ul><li>Applied feature detection and SVMs to build a classification system for visual scene data (Python).</li></ul>
+                
+                <h4>Bimodal Sentiment Analysis</h4>
+                <ul><li>Explored NLP and image-based sentiment classification using AI tools.</li></ul>
+                
+                <h4>Time Series Analysis</h4>
+                <ul><li>Analyzed long-term trends using data cleaning and visual reporting (R).</li></ul>
+            </div>
         `;
 
         // Elements
